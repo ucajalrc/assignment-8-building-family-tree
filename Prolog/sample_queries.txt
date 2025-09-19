@@ -1,0 +1,19 @@
+% Who are the children of alice?
+?- children(alice, Cs).
+% Expected: Cs = [diana, ethan].
+
+% Who are john’s grandchildren?
+?- findall(GC, grandchild(GC, john), L), sort(L, GCs).
+% Expected: GCs = [diana, ethan, george, helen].
+
+% Siblings of bob?
+?- siblings_of(bob, Ss).
+% Expected: Ss = [alice].
+
+% Is diana a cousin of george?
+?- cousin(diana, george).
+% Expected: true.
+
+% All descendants of susan
+?- descendants(susan, Ds).
+% Expected: Ds = [alice, bob, diana, ethan, george, helen].
