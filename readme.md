@@ -7,33 +7,13 @@ The goal is to show how Prolog can model family structures and answer relationsh
 
 ---
 
-## Features
-- **Basic facts**: parent/2, male/1, female/1  
-- **Derived relationships**:
-  - child/2
-  - father/2, mother/2
-  - sibling/2, brother/2, sister/2
-  - grandparent/2, grandchild/2
-  - cousin/2
-- **Recursive logic**:
-  - ancestor/2
-  - descendant/2
-- **Helper predicates** for easier querying:
-  - children/2
-  - siblings_of/2
-  - cousins_of/2
-  - descendants/2
-  - grandparents_of/2
-
----
-
 ## Setup
 
 ### Install SWI-Prolog
 - **macOS (Homebrew):**
   ```bash
   brew install swi-prolog
-````
+  ```
 
 * **Ubuntu/Debian:**
 
@@ -97,8 +77,8 @@ swipl --version
 ## Folder Structure
 
 ```
-Prolog/
-├── family_tree.pl      # Prolog facts and rules
-├── README.md           # This file
-└── sample_queries.txt  # Optional: contains example queries + expected output
+| - Prolog/
+    ├── family_tree.pl      # Prolog facts and rules          # This file
+    └── sample_queries.txt  # Optional: contains example queries + expected output
+| - Readme.md
 ```
